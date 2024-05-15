@@ -1017,7 +1017,7 @@
                 enableConsumption: true,
             },
             consumption: {
-                enableTrackingSession: true,
+                enableTrackingSession: false,
                 updateSessionInterval: 20,
                 idleTimeout: 10,
                 responseTimeout: 10,
@@ -1337,17 +1337,17 @@
             },
             protection: {
                 enforceSupportedBrowsers: false,
-                enableEncryption: true,
-                enableObfuscation: true,
-                disablePrint: true,
+                enableEncryption: false,
+                enableObfuscation: false,
+                disablePrint: false,
                 disableCopy: false,
                 canCopy: true,
                 charactersToCopy: 100,
                 detectInspect: false,
-                clearOnInspect: true, // make sure detectInspect is true, otherwise this won't work
-                disableKeys: true,
-                disableContextMenu: true,
-                hideTargetUrl: true,
+                clearOnInspect: false, // make sure detectInspect is true, otherwise this won't work
+                disableKeys: false,
+                disableContextMenu: false,
+                hideTargetUrl: false,
                 disableDrag: false,
                 excludeNodes:["script", "option"],
                 supportedBrowsers: [ // this will only be used if enforceSupportedBrowsers is true, and has nothing to do with the r2d2bc modules supported browsers
